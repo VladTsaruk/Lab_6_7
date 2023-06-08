@@ -1,0 +1,147 @@
+{
+	"info": {
+		"_postman_id": "90463830-25d3-4873-bdf5-44d5ba6284a2",
+		"name": "Tsaruk",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27475431",
+		"_collection_link": "https://martian-zodiac-933398.postman.co/workspace/d7f97cad-081f-435e-88f8-42a2a26e7a8c/collection/27475431-90463830-25d3-4873-bdf5-44d5ba6284a2?action=share&creator=27475431&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "Get page",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "test",
+							"value": "Test post request",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/tsaruk/UI/index.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"tsaruk",
+						"UI",
+						"index.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post method",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "test",
+						"value": "New value",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "test",
+							"value": "New value",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/tsaruk/UI/post.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"tsaruk",
+						"UI",
+						"post.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete method",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "15",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/tsaruk/UI/delete.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"tsaruk",
+						"UI",
+						"delete.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "put method",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "id",
+						"value": "15",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "14",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/tsaruk/UI/put.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"tsaruk",
+						"UI",
+						"put.php"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
